@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("images/1hbanner_slide1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    animation: slideshow 15s infinite linear;
+}
+@keyframes slideshow {
+    0%,25% {
+        background-image: url("images/1hbanner_slide1.jpg");
+    }
+    30%,55% {
+        background-image: url("images/2hbanner_banner02.jpg");
+    }
+    60%,85% {
+        background-image: url("images/3hbanner_banner01.jpg");
+    }
+    100% {
+        background-image: url("images/1hbanner_slide1.jpg");
+    }
+}
+#container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+.reg .row{
+    justify-content: center;
+    /* margin-top: 100px; */
+}
+.img-logo img{
+    margin-top: 150px;
+    width: 25%;
+    height: 100%;
+}
+.reg-btn{
+    margin: 100px 50px;
+}
